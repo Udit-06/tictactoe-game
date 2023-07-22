@@ -1,6 +1,6 @@
+import Board from './components/Board';
 import { useState } from 'react';
 import './styles.scss';
-import Board from './components/Board';
 
 function App() {
   const [counter, setCounter] = useState(1);
@@ -8,8 +8,8 @@ function App() {
   console.log('hello');
 
   const onBtnClick = () => {
-    setCounter((currentCounter) => {
-      return currentCounter + 1
+    setCounter(currentCounter => {
+      return currentCounter + 1;
     });
   };
 
